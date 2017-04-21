@@ -18,100 +18,114 @@ It contains the following files relevant to our project:
   1. yelp_academic_dataset_business.json
     * Contains a list of restaurants, and their categories
     * Sample record format:
-    ```json
-    {
-	"business_id": "5UmKMjUEUNdYWqANhGckJw",
-	"full_address": "4734 Lebanon Church Rd\nDravosburg, PA 15034",
-	"hours": {
-		"Friday": {
-			"close": "21:00",
-			"open": "11:00"
-		},
-		"Tuesday": {
-			"close": "21:00",
-			"open": "11:00"
-		},
-		"Thursday": {
-			"close": "21:00",
-			"open": "11:00"
-		},
-		"Wednesday": {
-			"close": "21:00",
-			"open": "11:00"
-		},
-		"Monday": {
-			"close": "21:00",
-			"open": "11:00"
-		}
-	},
-	"open": true,
-	"categories": [
-		"Fast Food",
-		"Restaurants"
-	],
-	"city": "Dravosburg",
-	"review_count": 7,
-	"name": "Mr Hoagie",
-	"neighborhoods": [],
-	"longitude": -79.9007057,
-	"state": "PA",
-	"stars": 3.5,
-	"latitude": 40.3543266,
-	"attributes": {
-		"Take-out": true,
-		"Drive-Thru": false,
-		"Good For": {
-			"dessert": false,
-			"latenight": false,
-			"lunch": false,
-			"dinner": false,
-			"brunch": false,
-			"breakfast": false
-		},
-		"Caters": false,
-		"Noise Level": "average",
-		"Takes Reservations": false,
-		"Delivery": false,
-		"Ambience": {
-			"romantic": false,
-			"intimate": false,
-			"classy": false,
-			"hipster": false,
-			"divey": false,
-			"touristy": false,
-			"trendy": false,
-			"upscale": false,
-			"casual": false
-		},
-		"Parking": {
-			"garage": false,
-			"street": false,
-			"validated": false,
-			"lot": false,
-			"valet": false
-		},
-		"Has TV": false,
-		"Outdoor Seating": false,
-		"Attire": "casual",
-		"Alcohol": "none",
-		"Waiter Service": false,
-		"Accepts Credit Cards": true,
-		"Good for Kids": true,
-		"Good For Groups": true,
-		"Price Range": 1
-	},
-	"type": "business"
+    
+```
+{
+   "business_id":"5UmKMjUEUNdYWqANhGckJw",
+   "full_address":"4734 Lebanon Church Rd\nDravosburg, PA 15034",
+   "hours":{
+      "Friday":{
+         "close":"21:00",
+         "open":"11:00"
+      },
+      "Tuesday":{
+         "close":"21:00",
+         "open":"11:00"
+      },
+      "Thursday":{
+         "close":"21:00",
+         "open":"11:00"
+      },
+      "Wednesday":{
+         "close":"21:00",
+         "open":"11:00"
+      },
+      "Monday":{
+         "close":"21:00",
+         "open":"11:00"
+      }
+   },
+   "open":true,
+   "categories":[
+      "Fast Food",
+      "Restaurants"
+   ],
+   "city":"Dravosburg",
+   "review_count":7,
+   "name":"Mr Hoagie",
+   "neighborhoods":[
+
+   ],
+   "longitude":-79.9007057,
+   "state":"PA",
+   "stars":3.5,
+   "latitude":40.3543266,
+   "attributes":{
+      "Take-out":true,
+      "Drive-Thru":false,
+      "Good For":{
+         "dessert":false,
+         "latenight":false,
+         "lunch":false,
+         "dinner":false,
+         "brunch":false,
+         "breakfast":false
+      },
+      "Caters":false,
+      "Noise Level":"average",
+      "Takes Reservations":false,
+      "Delivery":false,
+      "Ambience":{
+         "romantic":false,
+         "intimate":false,
+         "classy":false,
+         "hipster":false,
+         "divey":false,
+         "touristy":false,
+         "trendy":false,
+         "upscale":false,
+         "casual":false
+      },
+      "Parking":{
+         "garage":false,
+         "street":false,
+         "validated":false,
+         "lot":false,
+         "valet":false
+      },
+      "Has TV":false,
+      "Outdoor Seating":false,
+      "Attire":"casual",
+      "Alcohol":"none",
+      "Waiter Service":false,
+      "Accepts Credit Cards":true,
+      "Good for Kids":true,
+      "Good For Groups":true,
+      "Price Range":1
+   },
+   "type":"business"
 }
-    ```
+```
 
   2. yelp_academic_dataset_review.json
     * Contains the reviews of the restaurants
     * Format:
-
-    ```json
-    {"votes": {"funny": 0, "useful": 0, "cool": 0}, "user_id": "PUFPaY9KxDAcGqfsorJp3Q", "review_id": "Ya85v4eqdd6k9Od8HbQjyA", "stars": 4, "date": "2012-08-01", "text": "Mr Hoagie is an institution. Walking in, it does seem like a throwback to 30 years ago, old fashioned menu board, booths out of the 70s, and a large selection of food. Their speciality is the Italian Hoagie, and it is voted the best in the area year after year. I usually order the burger, while the patties are obviously cooked from frozen, all of the other ingredients are very fresh. Overall, its a good alternative to Subway, which is down the road.", "type": "review", "business_id": "5UmKMjUEUNdYWqANhGckJw"}
-
-    ```
+```json
+{
+   "votes":{
+      "funny":0,
+      "useful":0,
+      "cool":0
+   },
+   "user_id":"PUFPaY9KxDAcGqfsorJp3Q",
+   "review_id":"Ya85v4eqdd6k9Od8HbQjyA",
+   "stars":4,
+   "date":"2012-08-01",
+   "text":"Mr Hoagie is an institution. Walking in, it does seem like a throwback to 30 years ago, old fashioned menu board, booths out of the 70s, and a large selection of food. Their speciality is the Italian Hoagie, and it is voted the best in the area year after year. I usually order the burger, while the patties are obviously cooked from frozen, all of the other ingredients are very fresh. Overall, its a good alternative to Subway, which is down the road.",
+   "type":"review",
+   "business_id":"5UmKMjUEUNdYWqANhGckJw"
+}
+```
 
 #### Here is the sequence of scripts to run to get the finished files:
 
@@ -120,72 +134,75 @@ It contains the following files relevant to our project:
     * Input file: yelp_academic_dataset_business.json
     * Output file: category.json
     * Format:
-    ```json
-    [
-	{
-		"category": [
-			"Fast Food",
-			"Restaurants"
-		]
-	},
-	{
-		"category": [
-			"Nightlife"
-		]
-	},
-	{
-		"category": [
-			"Active Life",
-			"Mini Golf",
-			"Golf"
-		]
-	},
-	{
-		"category": [
-			"Bars",
-			"American (New)",
-			"Nightlife",
-			"Lounges",
-			"Restaurants"
-		]
-	}]
-  ```
+```json
+[
+   {
+      "category":[
+         "Fast Food",
+         "Restaurants"
+      ]
+   },
+   {
+      "category":[
+         "Nightlife"
+      ]
+   },
+   {
+      "category":[
+         "Active Life",
+         "Mini Golf",
+         "Golf"
+      ]
+   },
+   {
+      "category":[
+         "Bars",
+         "American (New)",
+         "Nightlife",
+         "Lounges",
+         "Restaurants"
+      ]
+   }
+]
+```
     
-    As we see, many of these are not restaurants. So we need a list of all the unique categories.
+   As we see, many of these are not restaurants. So we need a list of all the unique categories.
 
   3. preprocess/class_label_all.py
     * Input: category.json
     * Output: category_full.txt
     * Format:
-    ```json
-    [
-  [
-    "Restaurants",
-    26729
-  ],
-  [
-    "Shopping",
-    12444
-  ],
-  [
-    "Food",
-    10143
-  ],
-  [
-    "Beauty & Spas",
-    7490
-  ],
-  [
-    "Health & Medical",
-    6106
-  ]]
+    
+```json
+[
+   [
+      "Restaurants",
+      26729
+   ],
+   [
+      "Shopping",
+      12444
+   ],
+   [
+      "Food",
+      10143
+   ],
+   [
+      "Beauty & Spas",
+      7490
+   ],
+   [
+      "Health & Medical",
+      6106
+   ]
+]
 ```
     * Since, there were around only 1000 different categories, we had to look at each of them and decide which category belongs to a restaurant or a place that serves food.
     * So, we manually went through the list and prepared a list of categories that are relevant to our requirement.
     * File: relevant_labels_raw.txt
     * Format:
-    ```
-    Mexican
+```
+Mexican
 American (Traditional)
 Italian
 Chinese
@@ -198,7 +215,9 @@ Thai
 French         
 Indian
 ```
-    * These all labels are related to restaurants
+
+All these labels are related to restaurants.
+
   4. Next, we will only keep the data that is related to restaurants and only the reviews related to those restaurants
     * labels/relevant_business_ids_and_categories.py
       * Input: yelp_academic_dataset_business.json
@@ -213,12 +232,13 @@ Indian
       * Input: relevant_business_ids.txt, yelp_academic_dataset_review.json
       * Output: relevant_business_ids_and_reviews.json
       * Format:
-      ```json
-      [
-  {
-    "business_id": "5UmKMjUEUNdYWqANhGckJw",
-    "review": "Mr Hoagie is an institution. Walking in, it does seem like a throwback to 30 years ago, old fashioned menu board, booths out of the 70s, and a large selection of food. Their speciality is the Italian Hoagie, and it is voted the best in the area year after year. I usually order the burger, while the patties are obviously cooked from frozen, all of the other ingredients are very fresh. Overall, its a good alternative to Subway, which is down the road."
-  }]
+```json
+[
+   {
+      "business_id":"5UmKMjUEUNdYWqANhGckJw",
+      "review":"Mr Hoagie is an institution. Walking in, it does seem like a throwback to 30 years ago, old fashioned menu board, booths out of the 70s, and a large selection of food. Their speciality is the Italian Hoagie, and it is voted the best in the area year after year. I usually order the burger, while the patties are obviously cooked from frozen, all of the other ingredients are very fresh. Overall, its a good alternative to Subway, which is down the road."
+   }
+]
 ```
   6. Now, some of the restaurants have more than one relevant category, but since this is a class label, we must restrict each restaurant to just one category. For this, we will see which category of the restaurant is more popular among the reviews.
     * First, we combine all the reviews of a business_id under one business_id. During this process, we remove any numbers and symbols and convert each word to lowercase, so that comparison is uniform.
@@ -226,7 +246,7 @@ Indian
       * Input: relevant_business_ids_and_reviews.json
       * Output: relevant_business_ids_and_reviews_combined.json
       * Format:
-      ```json
+```json
       {
   "sgBl3UDEcNYKwuUb92CYdA": [
     "this",
@@ -264,13 +284,13 @@ Indian
     "want",
     "the",
     "best"]}
-    ```
+```
   7. Now, we will process the file with relevant business_id to keep only one label per business_id.
     * labels/only_one_category_business_ids.py
       * Input: relevant_business_ids_and_reviews_combined.json
       * Output: relevant_business_ids_and_categories_only_one.json
       * Format:
-      ```json
+```json
       [
   {
     "category": "Fast Food",
